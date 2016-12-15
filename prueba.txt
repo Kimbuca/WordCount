@@ -1,0 +1,8 @@
+If there’s one word you will get used to seeing a lot as you
+go through this Guide, it is this one: protocol. You will
+see reference to networking protocols, internetworking protocols, high-level 
+protocols, low-level protocols, protocol stacks, protocol suites,
+sub-protocols, and so on. Clearly protocols are important, yet many reference
+works and standards use the term over and over again without ever explaining it.
+One reason for this may be because the term is somewhat vague and can have many meanings,
+which can make it difficult to grasp.
