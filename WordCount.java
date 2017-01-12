@@ -14,7 +14,7 @@ public class WordCount {
 		
 		public Map(String src) throws IOException{
 			 try {
-				 
+				
 				BufferedReader in = new BufferedReader(new FileReader(src));
 				String line;
 				String delimiters = "\\s|(?:\\.|\\,)(\\s)|(?:\\.|\\,|\\s)$";
@@ -22,7 +22,8 @@ public class WordCount {
 				
 				while((line = in.readLine()) != null)
 				{
-
+					
+				    //divide by words
 				    String [] res  = line.split(delimiters);
 				    for(String s : res){
 				    	m.add(new Word(s,1));
@@ -54,16 +55,16 @@ public class WordCount {
 				public int compare(Word w1, Word w2) {
 					 return  w1.getWord().compareTo(w2.getWord());
 				}
-		    });
+		    	});
 			
-			System.out.println("\n ##### FASE 1 #####");		
+			System.out.println("\n ##### FASE 1 - Map #####");		
 			for(Word element: map.m){
 				System.out.println(element.getWord());
 				
 			}
 			
 			
-			System.out.println("\n ##### FASE 2 #####");
+			System.out.println("\n ##### FASE 2 - Reduce #####");
 			int count =1, ind=0;
 			Word prevWord = map.m.remove(ind);
 
